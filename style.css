@@ -1,0 +1,106 @@
+*,
+*:before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: blue;
+}
+
+.container{
+    
+    width: 40%;
+    position: absolute;
+    min-width: 450px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+
+#newtask{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    
+}
+#newtask input {
+    width: 70%;
+    width: 70%;
+    height: 45%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid rgb(80, 76, 76);
+  
+    font-weight: 500;
+    position: relative;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: azure;
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: beige;
+    cursor: pointer;
+    
+   
+}
+
+#tasks{
+    background-color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.task{
+    background-color: white;
+    height: 50px;
+    border-radius: 5px 10px;
+    display: flex;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.task span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task button{
+    background-color: blue;
+    color: wheat;
+    height: 100%;
+    width: 40px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed{
+    text-decoration: line-through;
+}
